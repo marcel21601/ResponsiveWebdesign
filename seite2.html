@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideBuddy</title>
+    <script language="javascript" type="text/javascript" src="js.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a id="thejourney" href="index.html" target="_self">THE JOURNEY</a>
+        <a id="knowmore" style="opacity: 1;">KNOW MORE</a>
+        <a id="qanda" href="Seite3.html" target="_self">Q&A</a>
+    </nav>
+
+    <div class="content">
+        <div class="text-section">
+            <h1>About RideBuddy</h1>
+            <p>
+                RideBuddy is an innovative app designed to combat climate change while making your daily commute more efficient and social. <br>
+                As a student, you can use RideBuddy to register and share rides with fellow students heading to the same destination.
+            </p>
+            <p>
+                With our easy-to-use interface, you can:
+            </p>
+            <ul>
+                <li>Quickly register a ride or join an existing one.</li>
+                <li>Connect with fellow students who share your route and schedule.</li>
+                <li>Reduce your carbon footprint by carpooling to university.</li>
+            </ul>
+            <p>
+                By driving together, you contribute to a greener future and help to save CO2. RideBuddy is more than just an app; it is a movement to promote sustainability and build a community of environmentally conscious students.
+            </p>
+            <p>
+                Join us and be a part of the change today!
+            </p>
+            <p style="font-weight: bold;">
+                <a href="download.jpeg" download="download.jpeg" style="text-decoration: none; color: inherit;">
+                    Download HERE
+                </a>
+            </p>
+        </div>
+    </div>
+</body>
+
+<style>
+    
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Bebas Neue', sans-serif;
+        background-color: #f4f4f4;
+        overflow-x: hidden; 
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding: 20px;
+        z-index: 1000;
+        
+    }
+
+    .navbar a {
+        margin-right: 10px;
+        padding: 10px 20px;
+        background-color: #000;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.5rem;
+        opacity: 0.5;
+        text-decoration: none;
+    }
+
+    .navbar a:hover {
+        opacity: 1;
+        
+    }
+
+    .content {
+        background-color: #d60c0c;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10vh 5vw; 
+        min-height: 100vh; 
+        box-sizing: border-box; 
+    }
+
+    .text-section {
+        max-width: 900px; 
+        font-size: 1.7rem; 
+        line-height: 1.3; 
+        color: #000;
+        text-align: left;
+    }
+
+    .text-section h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .text-section ul {
+        padding-left: 20px;
+    }
+
+    .text-section ul li {
+        margin-bottom: 10px;
+    }
+
+   
+    @media (max-width: 768px) {
+        .content {
+            padding: 8vh 5vw; 
+            min-height: auto; 
+        }
+
+        .text-section {
+            font-size: 1.8rem; 
+        }
+
+        .navbar a {
+            font-size: 1.2rem; 
+            padding: 10px; 
+        }
+    }
+</style>
+</html>

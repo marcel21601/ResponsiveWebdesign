@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideBuddy</title>
+    <script language="javascript" type="text/javascript" src="js.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a id="thejourney" href="index.html" target="_self">THE JOURNEY</a>
+        <a id="knowmore" href="seite2.html" target="_self" style="text-decoration: none;" >KNOW MORE</a>
+        <a id="qanda" style="opacity: 1;" href="Seite3.html" target="_self">Q&A</a>
+    </nav>
+
+    <div class="content">
+        <div class="text-section">
+            <h1 id="animated-title">Coming Soon</h1>
+        </div>
+    </div>
+
+    <script>
+        
+        const title = document.getElementById('animated-title');
+
+        title.addEventListener('click', () => {
+            
+            title.classList.add('bounce-animation');
+
+           
+            title.addEventListener('animationend', () => {
+                title.classList.remove('bounce-animation');
+            }, { once: true });
+        });
+    </script>
+</body>
+
+<style>
+    
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Bebas Neue', sans-serif;
+        overflow-x: hidden; 
+    }
+
+    .content {
+        background-color: #d60c0c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    h1 {
+        font-size: 3em;
+        cursor: pointer; 
+        display: inline-block; 
+        transition: transform 0.2s; 
+    }
+
+    
+    @keyframes bounce {
+        0% {
+            transform: translateY(0); 
+        }
+        30% {
+            transform: translateY(-50px); 
+        }
+        50% {
+            transform: translateY(10px); 
+        }
+        70% {
+            transform: translateY(-10px); 
+        }
+        100% {
+            transform: translateY(0); 
+        }
+    }
+
+    
+    .bounce-animation {
+        animation: bounce 1s ease-in-out;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    .navbar a {
+        margin-right: 10px;
+        padding: 10px 20px;
+        background-color: #000;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.5rem;
+        opacity: 0.5;
+        text-decoration: none;
+    }
+
+    .navbar a:hover {
+        opacity: 1;
+    }
+</style>
+</html>

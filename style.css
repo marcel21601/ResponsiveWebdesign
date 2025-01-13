@@ -102,7 +102,7 @@ body {
 
 
 .character, .character3 {
-    width: 30vw; 
+    width: 49vw; 
     max-width: 450px; 
     height: auto; 
     opacity: 0;
@@ -179,7 +179,7 @@ body {
 
 
 
-@media (max-width: 1050px) {
+@media (max-width: 768px) {
     .content {
         display: flex;
         flex-direction: column; 

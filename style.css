@@ -213,7 +213,8 @@ body {
     }
 #logo-s5{
     order: -4;
-    width: 80%;
+    width: 70vw;
+    height: auto;
     
 }
 
